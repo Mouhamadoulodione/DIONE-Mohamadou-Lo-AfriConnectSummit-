@@ -61,33 +61,27 @@
 
           </section>
 
-    <!-- Recherche -->
-
-<section>
-
-    <input type="text" placeholder="Rechercher un intervenant">
-
-</section>
-
       <!-- Filtres -->
 
-<section>
+<section class="speaker-filter">
 
-    <button>Tous</button>
+    <button class="filter-btn active" data-filter="all">Tous</button>
 
-    <button>IA & Tech</button>
+    <button class="filter-btn" data-filter="ia">IA & Tech</button>
 
-    <button>Business</button>
+    <button class="filter-btn" data-filter="business">Business</button>
 
-    <button>Design</button>
+    <button class="filter-btn" data-filter="design">Design</button>
 
-    <button>Data</button>
+    <button class="filter-btn" data-filter="data">Data</button>
 
 </section>
+
+<div class="speakers-grid">
 
    <!-- Intervenant 1 -->
 
-<div>
+<div class="speaker-card" data-category="IA & Tech">
 
     <img src="./images/ndiaye.jpeg" alt="Fatou Ndiaye">
 
@@ -103,7 +97,7 @@
 
 <!-- Intervenant 2 -->
 
-<div>
+<div class="speaker-card" data-category="Business">
 
     <img src="./images/koffi.jpeg" alt="Jean Koffi">
 
@@ -119,7 +113,7 @@
 
 <!-- Intervenant 3 -->
 
-<div>
+<div class="speaker-card" data-category="Design">
 
     <img src="./images/kone.png" alt="Aminata Koné">
 
@@ -135,7 +129,7 @@
 
 <!-- Intervenant 4 -->
 
-<div>
+<div class="speaker-card" data-category="Data">
 
     <img src="./images/yassine.jpeg" alt="Yassine Benali">
 
@@ -151,7 +145,7 @@
 
 <!-- Intervenant 5 -->
 
-<div>
+<div class="speaker-card" data-category="IA & Tech">
 
     <img src="./images/salma.jpeg" alt="Salma Bennis">
 
@@ -167,7 +161,7 @@
 
 <!-- Intervenant 6 -->
 
-<div>
+<div class="speaker-card" data-category="Business">
 
     <img src="./images/ahmed.jpeg" alt="Karim Aït Ahmed">
 
@@ -183,7 +177,7 @@
 
 <!-- Intervenant 7 -->
 
-<div>
+<div class="speaker-card" data-category="Design">
 
     <img src="./images/sipho.jpeg" alt="Sipho Dlamini">
 
@@ -199,7 +193,7 @@
 
 <!-- Intervenant 8 -->
 
-<div>
+<div class="speaker-card" data-category="Data">
 
     <img src="./images/syllla.jpeg" alt="Aïssatou Sylla">
 
@@ -215,7 +209,7 @@
 
 <!-- Intervenant 9 -->
 
-<div>
+<div class="speaker-card" data-category="IA & Tech">
 
     <img src="./images/mayo.png" alt="Patrick Moyo">
 
@@ -235,59 +229,40 @@
 
     <footer>
 
+    <div class="footer-grid">
+
         <div>
+            <h3>AfriConnect Summit 2026</h3>
+            <p>Le plus grand rendez-vous du numérique en Afrique.</p>
+        </div>
 
-        <h3>AfriConnect Summit 2026</h3>
+        <div>
+            <h3>Navigation</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="programme.html">Programme</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
 
-        <p>Le plus grand rendez-vous du numérique en Afrique.</p>
-
-    </div>
-
-    <div>
-
-        <h3>Navigation</h3>
-
-        <ul>
-
-            <li><a href="index.html">Accueil</a></li>
-
-            <li><a href="programme.html">Programme</a></li>
-
-            <li><a href="intervenants.html">Intervenants</a></li>
-
-            <li><a href="contact.html">Contact</a></li>
-
-        </ul>
-
-    </div>
-
-    <div>
-
-        <h3>Suivez-nous</h3>
-
-        <p>Facebook</p>
-
-        <p>Instagram</p>
-
-        <p>TIK TOK</p>
-
-        <P>YouTUBE</P>
+        <div>
+            <h3>Suivez-nous</h3>
+            <p>Facebook</p>
+            <p>Instagram</p>
+            <p>TikTok</p>
+            <p>YouTube</p>
+        </div>
 
     </div>
 
-    <p>&copy; 2026 AfriConnect Summit</p>
+    <p class="copyright">&copy; 2026 AfriConnect Summit</p>
 
-    </footer>
+</footer>
 
     <!-- JavaScript -->
     <script src="js/main.js"></script>
 
 </body>
 
-</html>
-    
-</head>
-<body>
-    
-</body>
 </html>
