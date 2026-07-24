@@ -42,7 +42,7 @@
 
         </ul>
 
-         <button>🌙</button>
+          <button id="themeToggle">🌙</button>
 
     </nav>
 
@@ -54,29 +54,30 @@
 
     <!-- Hero -->
 
-    <section>
+<section>
 
-        <h1>Programme des conférences</h1>
+    <p>Accueil > Programme</p>
 
-        <p>
-            Découvrez les activités prévues pendant les trois jours
-            d'AfriConnect Summit 2026.
-        </p>
+    <h1>Programme des conférences</h1>
 
-    </section>
+    <p>
+        Découvrez les activités prévues pendant les trois jours d'AfriConnect Summit 2026.
+    </p>
 
+</section>
     <!-- Navigation des jours -->
 
-    <section>
+<section class="jours">
 
-        <button>Jour 1</button>
+    <button class="jour-btn" data-day="jour1">Jour 1</button>
 
-        <button>Jour 2</button>
+    <button class="jour-btn" data-day="jour2">Jour 2</button>
 
-        <button>Jour 3</button>
-    </section>
+    <button class="jour-btn" data-day="jour3">Jour 3</button>
 
-    <section>
+</section>   
+
+   <section id="jour1" class="programme">
 
     <h2>Jour 1</h2>
 
@@ -130,7 +131,7 @@
 
     <!-- Jour 2 -->
 
-   <section>
+   <section id="jour2" class="programme">
 
     <h2>Jour 2</h2>
 
@@ -184,7 +185,7 @@
 
     <!-- Jour 3 -->
 
-    <section>
+    <section id="jour3" class="programme">
 
     <h2>Jour 3</h2>
 
@@ -242,17 +243,17 @@
 
         <h2>Les thématiques</h2>
 
-    <div>
+<div class="themes-grid">
 
-        <div>
+    <div class="theme-card">
 
             <h3>Intelligence Artificielle</h3>
 
             <p>Découvrez les nouvelles applications de l'IA.</p>
 
-        </div>
+    </div>
 
-        <div>
+    <div class="theme-card">
 
             <h3>Développement Web</h3>
 
@@ -260,15 +261,15 @@
 
         </div>
 
-        <div>
+        <div class="theme-card">
 
-            <h3>Cybersécurité</h3>
-
+            <h3>Cybersécurité</h3
+                >
             <p>Protégez les données informatiques.</p>
 
         </div>
 
-        <div>
+        <div class="theme-card">
 
             <h3>Introduction au Cloud</h3>
 

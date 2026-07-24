@@ -41,7 +41,7 @@
 
         </ul>
 
-         <button>🌙</button>
+        <button id="themeToggle">🌙</button>
 
     </nav>
 
@@ -64,24 +64,28 @@
  
 <!-- Formulaire -->
 
-<section>
+<section class="contact-container">
+     <div class="contact-form">
 
     <h2>Formulaire d'inscription</h2>
 
- <form>
+ <form id="formulaire">
 
    <label>Nom complet</label><br>
-   <input type="text"><br><br>
+   <input type="text" id="nom">
+   <small id="erreurNom"></small>
 
    <label>Email</label><br>
-   <input type="email"><br><br>
+   <input type="text" id="nom">
+   <small id="erreurNom"></small>
 
    <label>Téléphone</label><br>
-   <input type="tel"><br><br>
+   <input type="tel" id="telephone">
+   <small id="erreurTelephone"></small>
 
    <label>Type de participation</label><br>
 
- <select>
+ <select id="participation">
 
     <option>Participant</option>
     <option>Intervenant</option>
@@ -93,7 +97,8 @@
 
      <label>Pays</label><br>
 
-  <select>
+  
+<select id="pays">
 
     <option>Sénégal</option>
     <option>Côte d'Ivoire</option>
@@ -111,20 +116,20 @@
     <br><br>
 
     <label>Message</label><br>
-
-    <textarea rows="5"></textarea>
-
-    <br><br>
+    <textarea rows="5" id="message"></textarea>
+    <small id="erreurMessage"></small>
 
     <button type="submit">Envoyer</button>
 
+    <p id="succes"></p>
+
     </form>
 
-</section>
+ </div>
 
    <!-- Informations Personnel -->
 
-    <section>
+    <div class="contact-info">
     
         <h2>Informations</h2>
 
@@ -136,28 +141,68 @@
 
         <p><strong>Horaires :</strong> Lundi au Vendredi : 08h00 - 17h00</p>
 
+        </div>
+
      </section>
 
         <!-- FAQ -->
 
 <section>
 
-    <h2>Questions fréquentes</h2>
+    <div class="faq-item">
 
-    <h3>Quelle est la date de la conférence ?</h3>
-    <p>La conférence se déroule du 10 au 12 novembre 2026.</p>
+    <input type="checkbox" id="q1">
 
-    <h3>Où se déroule l'événement ?</h3>
-    <p>À Dakar, au Sénégal.</p>
+    <label for="q1">
+        Quelle est la date de la conférence ?
+    </label>
 
-    <h3>Comment s'inscrire ?</h3>
-    <p>Remplissez le formulaire d'inscription.</p>
+    <div class="faq-content">
+        <p>La conférence se déroule du 10 au 12 novembre 2026.</p>
+    </div>
 
-    <h3>Qui peut participer ?</h3>
-    <p>
+    
+    <input type="checkbox" id="q2">
 
-    <h3>Comment contacter l'organisation ?</h3>
-    <p>Par téléphone ou par email.</p>
+    <label for="q1">
+       Où se déroule l'événement ?
+    </label>
+
+    <div class="faq-content">
+        <p>À Dakar, au Sénégal.</p>
+    </div>
+
+    <input type="checkbox" id="q3">
+
+    <label for="q1">
+      Comment s'inscrire ?
+    </label>
+
+    <div class="faq-content">
+        <p>Remplissez le formulaire d'inscription.</p>
+    </div>
+
+     <input type="checkbox" id="q4">
+         
+    <label for="q1">
+      Qui peut participer ?
+    </label>
+
+    <div class="faq-content">
+        <p>Toute personne intéressée.</p>
+    </div>
+
+     <input type="checkbox" id="q5">
+
+    <label for="q1">
+      Comment contacter l'organisation ?
+    </label>
+
+    <div class="faq-content">
+        <p>Par téléphone ou par email.</p>
+    </div>
+
+</div>
 
 </section>
 
@@ -219,8 +264,3 @@
 
 </html>
 
-</head>
-<body>
-    
-</body>
-</html>

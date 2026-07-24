@@ -41,7 +41,7 @@
 
         </ul>
 
-         <button>🌙</button>
+        <button id="themeToggle">🌙</button>
 
     </nav>
 
@@ -53,64 +53,95 @@
 
     <!-- Hero -->
 
-    <section id="hero">
+    <section class="hero">
+
+    <div class="hero-content">
 
         <h1>Bienvenue à AfriConnect Summit 2026</h1>
 
         <p>
-            Un événement annuel qui réunit développeurs, entrepreneurs et investisseurs du 
-            continent.
+            Un événement annuel qui réunit développeurs, entrepreneurs et investisseurs du continent.
         </p>
 
         <p>
             Dakar, Sénégal Du 10 au 12 Novembre 2026
-       </p>
+        </p>
 
+        <div class="hero-buttons">
+            <button>Voir le Programme</button>
+            <button>Je m'inscris</button>
+        </div>
 
-        <button>Voir le Programme</button>
+    </div>
 
-        <button>Je m'incris</button>
-    
-    </section>
+    <div class="hero-image">
+        <img src="./images/conf.png" alt="AfriConnect Summit">
+    </div>
+
+</section>
+
+<!-- compte à rebours -->
+
+     <section class="countdown-section">
+
+    <h2>Compte à rebours</h2>
+
+    <div class="countdown">
+
+        <div>
+            <h3 id="days">0</h3>
+            <p>Jours</p>
+        </div>
+
+        <div>
+            <h3 id="hours">0</h3>
+            <p>Heures</p>
+        </div>
+
+        <div>
+            <h3 id="minutes">0</h3>
+            <p>Minutes</p>
+        </div>
+
+        <div>
+            <h3 id="seconds">0</h3>
+            <p>Secondes</p>
+        </div>
+
+    </div>
+
+</section>
 
     <!-- Chiffres clés -->
         
- <section id="chiffres">
+<section class="stats">
 
-    <h2>Quelques chiffres clés</h2>
+    <div class="section-title">
 
-    <div>
+        <h2>Quelques chiffres clés</h2>
 
-        <div>
+    </div>
 
-            <h3>+1200</h3>
+    <div class="stats-grid">
 
+        <div class="stat-card">
+          <h3 id="c1">0</h3>
             <p>Participants</p>
-
         </div>
 
-        <div>
-
-            <h3>48</h3>
-
+        <div class="stat-card">
+            <h3 id="c2">0</h3>
             <p>Intervenants</p>
-
         </div>
 
-        <div>
-
-            <h3>3</h3>
-
+        <div class="stat-card">
+            <h3 id="c3">0</h3>
             <p>Jours de conférence</p>
-
         </div>
 
-        <div>
-
-            <h3>12</h3>
-
+        <div class="stat-card">
+            <h3 id="c4">0</h3>
             <p>Pays représentés</p>
-
         </div>
 
     </div>
@@ -119,133 +150,97 @@
 
     <!-- Pourquoi participer -->
 
-<section id="pourquoi">
+<section class="why-section">
 
-        <h2>Pourquoi participer ?</h2>
+    <h2>Pourquoi participer ?</h2>
 
-         <div>
+    <div class="why-container">
 
-        <div>
-
+        <div class="why-card">
             <h3>Développer son réseau</h3>
-
-            <p>
-               Développez votre réseau.
-            </p>
-
+            <p>Développez votre réseau.</p>
         </div>
 
-        <div>
-
+        <div class="why-card">
             <h3>Innovations</h3>
-
-            <p>
-                Découvrez les nouvelles technologies.
-            </p>
-
+            <p>Découvrez les nouvelles technologies.</p>
         </div>
 
-        <div>
-
+        <div class="why-card">
             <h3>Opportunités</h3>
-
-            <p>
-               Trouvez de nouvelles opportunités.
-            </p>
-
+            <p>Trouvez de nouvelles opportunités.</p>
         </div>
 
     </div>
 
 </section>
 
-    <!-- Intervenants -->
+<!-- Intervenants vedettes -->
 
-    <section id="intervenants">
+<section class="speakers">
 
-        <h2>Intervenants vedettes</h2>
+    <h2>Intervenants vedettes</h2>
 
-         <div>
+    <div class="speakers-grid">
 
-        <div>
-
-            <img src="./images/ndiaye.jpeg" alt="Intervenant">
-
+        <div class="speaker-card">
+            <img src="./images/ndiaye.jpeg" alt="Fatou Ndiaye">
             <h3>Fatou Ndiaye</h3>
-
             <p>Experte Cloud - Sénégal</p>
-
         </div>
 
-        <div>
-
-            <img src="./images/koffi.jpeg" alt="Intervenant">
-
+        <div class="speaker-card">
+            <img src="./images/koffi.jpeg" alt="Jean Koffi">
             <h3>Jean Koffi</h3>
-
             <p>Développeur IA - Côte d'Ivoire</p>
-
         </div>
 
-        <div>
-
-            <img src="./images/bello.jpeg" alt="Intervenant">
-
+        <div class="speaker-card">
+            <img src="./images/bello.jpeg" alt="Amina Bello">
             <h3>Amina Bello</h3>
-
             <p>Data Scientist - Nigeria</p>
-
         </div>
 
-        <div>
-
-            <img src="./images/ali.jpeg" alt="Intervenant">
-
+        <div class="speaker-card">
+            <img src="./images/ali.jpeg" alt="Mohamed Ali">
             <h3>Mohamed Ali</h3>
-
             <p>Ingénieur DevOps - Égypte</p>
-
         </div>
 
     </div>
 
-    <a href="intervenants.html">Voir tous les intervenants<
+    <a href="intervenants.html" class="btn btn-primary">
+        Voir tous les intervenants
+    </a>
 
-    </section>
+</section>
 
-    <!-- Sponsors -->
+<!-- Sponsors -->
 
-    <section id="sponsors">
+<section class="sponsors">
 
-        <h2>Nos sponsors</h2>
+    <h2>Nos sponsors</h2>
 
-    <div>
+    <div class="sponsors-container">
 
-        <h3>Or</h3>
+        <div class="gold">
+            <h3>🥇 Or</h3>
+            <p>Orange Africa</p>
+        </div>
 
-        <p>TechAfrica</p>
+        <div class="silver">
+            <h3>🥈 Argent</h3>
+            <p>Ecobank</p>
+        </div>
 
-    </div>
-
-    <div>
-
-        <h3>Argent</h3>
-
-        <p>Sonatel</p>
-
-    </div>
-
-    <div>
-
-        <h3>Bronze</h3>
-
-        <p>wave</p>
+        <div class="bronze">
+            <h3>🥉 Bronze</h3>
+            <p>Ethiopian Airlines</p>
+        </div>
 
     </div>
 
-    </section>
-
-    </main>
+</section>
 
     <!-- - FOOTER - -->
 
@@ -278,12 +273,17 @@
 
     </div>
 
-    <p class="copyright">&copy; 2026 AfriConnect Summit</p>
+<p class="copyright">
+    &copy; <span id="year"></span> AfriConnect Summit
+</p>
 
 </footer>
     
+
     <!-- JavaScript -->
     <script src="js/main.js"></script>
+
+    <!-- contenu de la page -->
 
 </body>
 
